@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --win-accent: #0078d4;
+  --win-bg: #1a1a2e;
+  --win-surface: rgba(32, 32, 44, 0.97);
+  --win-border: rgba(255, 255, 255, 0.08);
+  --win-text: rgba(255, 255, 255, 0.85);
+  --win-muted: rgba(255, 255, 255, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body), "Segoe UI", system-ui, sans-serif;
+  color: var(--win-text);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: default;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+::selection {
+  background: rgba(0, 120, 212, 0.45);
+}
+
+.os-chrome {
+  user-select: none;
+}
+
+.wallpaper {
+  background:
+    radial-gradient(circle at 22% 26%, rgba(95, 181, 255, 0.9), transparent 19%),
+    radial-gradient(circle at 34% 42%, rgba(151, 93, 255, 0.74), transparent 24%),
+    radial-gradient(circle at 61% 35%, rgba(0, 120, 212, 0.9), transparent 28%),
+    radial-gradient(circle at 70% 58%, rgba(255, 126, 177, 0.46), transparent 22%),
+    linear-gradient(135deg, #08265c 0%, #34205f 45%, #062a50 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="range"] {
+  accent-color: #0078d4;
+}
